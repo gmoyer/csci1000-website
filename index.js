@@ -253,7 +253,7 @@ function addMore() {
                         }
                     }
                     centerX += (Math.floor(Math.random()*3)-1)*0.2;
-                    centerY += (Math.floor(Math.random()*5)-2)*0.7;
+                    centerY += (Math.floor(Math.random()*5)-2)*0.9;
                     $( this ).css("position", "fixed");
                     $( this ).css("left", centerX+"%");
                     $( this ).css("top", centerY+"%");
