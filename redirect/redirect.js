@@ -10,6 +10,6 @@ if (parseInt(value) > 100) {
   window.location.href = "../griffinsite/index.html";
 } else {
   setTimeout(() => {
-    location.assign("../redirect1/redirect1.html?index=" + (parseInt(value)+1));
-  }, 100);
+    location.assign("https://harri665.github.io/redirect1/index.html?index=" + (parseInt(value)+1));
+  }, 10);
 }
