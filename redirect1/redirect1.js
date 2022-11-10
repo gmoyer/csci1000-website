@@ -5,5 +5,5 @@ const params = new Proxy(new URLSearchParams(window.location.search), {
   let value = params.index; // "some_value"
 
 setTimeout(() => {
-    window.location.href = "./redirect2.html?index=" + (parseInt(value)+1);
+    window.location.href = "../redirect2/redirect2.html?index=" + (parseInt(value)+1);
 }, 10);
