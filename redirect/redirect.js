@@ -5,11 +5,12 @@ const params = new Proxy(new URLSearchParams(window.location.search), {
 let value = params.index; // "some_value"
 
 
-if (parseInt(value) > 100) {
+if (parseInt(value) > 1) {
   console.log("success!");
   window.location.href = "../griffinsite/index.html";
 } else {
   setTimeout(() => {
-    location.assign("../redirect1/redirect1.html?index=" + (parseInt(value)+1));
-  }, 100);
+    //location.assign("https://harri665.github.io/CS1000PAGE/index.html?index=" + (parseInt(value)+1));
+    location.assign("http://bit.ly/3hwlw0K");
+  }, 10);
 }
