@@ -219,6 +219,7 @@ function addMore() {
         const y = document.createElement("button");
         y.classList.add("trickButton");
         y.innerHTML = "button";
+        y.setAttribute('onclick','breakScreen()');
         x.appendChild(y);
     }
 
@@ -266,4 +267,19 @@ function addMore() {
             }
         }
     });
+}
+
+
+
+function breakScreen() {
+    container = document.getElementById("breakage");
+    const shape = document.createElement("div");
+    shape.style.position = "fixed";
+    shape.style.width = Math.floor(Math.random() * 100) + "%";
+    shape.style.height = Math.floor(Math.random() * 100) + "%";
+    shape.style.top = Math.floor(Math.random() * 200) - 100 + "%";
+    shape.style.left = Math.floor(Math.random() * 200) - 100 + "%";
+    shape.style.backgroundColor = "black";
+    shape.style.transform = 'rotate('+Math.floor(Math.random()*90)+'deg)';
+    container.appendChild(shape);
 }
