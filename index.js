@@ -198,14 +198,14 @@ $(document).ready(function () {
     });
 
 
-    $( "body" ).mousemove(function( event ) {
-        var colors = ["red", "blue", "lime", "yellow"];
-        var item = colors[Math.floor(Math.random()*colors.length)];
-        //var msg = "Handler for .mousemove() called at ";
-        //msg += event.pageX + ", " + event.pageY;
-        //$( "#log" ).append( "<div>" + msg + "</div>" );
-        $(this).css("background-color", item);
-      });
+    // $( "body" ).mousemove(function( event ) {
+    //     var colors = ["red", "blue", "lime", "yellow"];
+    //     var item = colors[Math.floor(Math.random()*colors.length)];
+    //     //var msg = "Handler for .mousemove() called at ";
+    //     //msg += event.pageX + ", " + event.pageY;
+    //     //$( "#log" ).append( "<div>" + msg + "</div>" );
+    //     $(this).css("background-color", item);
+    //   });
 
 });
 
